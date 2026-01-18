@@ -43,6 +43,13 @@
     background: #230E3D;
 }
 
+#title {
+    font-size: 2.6rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
 /* Main Styles */
 
 /* header section */
@@ -208,11 +215,101 @@ header {
     color: #FFFFFF;
 }
 
+/* Choose Section */
+
+#choose {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+#card-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2);
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.card-1 {
+    display: grid;
+    width: 380px;
+}
+
+#box-1 {
+    grid-row: span 2;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    padding-top: 107px;
+    padding-bottom: 107px;
+}
+
+.card-2 {
+    display: grid;
+    gap: 30px;
+}
+
+#box-2 {
+    grid-column: span 2;
+    grid-row: span 1;
+    width: 790px;
+}
+
+#box-3 {
+    grid-column: span 1;
+    width: 790px;
+}
+
+#card-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+#box-4 {
+    grid-column: span 1;
+    width: 790px;
+}
+
+#box-5 {
+    grid-column: span 1;
+    width: 380px;
+}
+
+.box {
+    padding: 40px;
+    background: #35116545;
+    border-radius: 40px;
+}
+
+.box img {
+    margin-bottom: 16px;
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+}
+
+.box h2 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.box p {
+    line-height: 24px;
+    color: white;
+}
+
 /* Responsive design */
 @media screen and (max-width:992px) and (min-width:576px) {
+
     .tablet-container {
         width: 90%;
         margin: 0 auto;
+    }
+
+    #title {
+        font-size: 1rem;
     }
 
     #desktop-nav {
@@ -289,11 +386,32 @@ header {
         font-size: 0.7rem;
     }
 
+    #card-1,
+    #card-2 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1);
+    }
+
+    .card-1,
+    #box-2,
+    #box-3,
+    #box-4,
+    #box-5 {
+        width: 100%;
+        grid-column: span 1;
+    }
 }
 
 @media screen and (max-width:576px) {
     #desktop-nav {
         display: none;
+    }
+
+    #title {
+        font-size: 2rem;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 40px;
     }
 
     .mobile-container {
@@ -379,6 +497,21 @@ header {
     .info-box p {
         font-size: 0.7rem;
     }
+
+    #card-1,
+    #card-2 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1);
+    }
+
+    .card-1,
+    #box-2,
+    #box-3,
+    #box-4,
+    #box-5 {
+        width: 100%;
+        grid-column: span 1;
+    }
 }
 
 @media screen and (max-width:370px) {
@@ -386,6 +519,7 @@ header {
         width: 96%;
         margin: 0 auto;
     }
+
     .banner-btn {
         flex-direction: column;
         gap: 20px;
