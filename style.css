@@ -219,7 +219,8 @@ header {
 
 #choose,
 #episodes,
-#newsletter {
+#newsletter,
+footer {
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -584,7 +585,7 @@ footer {
     }
 
     #title {
-        font-size: 2rem;
+        font-size: 1.8rem;
         color: #fff;
         text-align: center;
         margin-bottom: 40px;
@@ -739,16 +740,22 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
     }
-}
 
-@media screen and (max-width:370px) {
-    .mobile-container {
-        width: 96%;
-        margin: 0 auto;
+    #choose,
+    #episodes,
+    #newsletter,
+    footer {
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
-    .banner-btn {
-        flex-direction: column;
-        gap: 20px;
+    #about {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .banner-container {
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 }
