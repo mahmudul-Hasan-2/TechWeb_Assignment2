@@ -217,7 +217,8 @@ header {
 
 /* Choose Section */
 
-#choose {
+#choose,
+#episodes {
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -298,6 +299,64 @@ header {
 .box p {
     line-height: 24px;
     color: white;
+}
+
+.episode-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.episode-box {
+    color: #FFFFFF;
+    background: #250D44;
+    border-radius: 30px;
+}
+
+.episode-img {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.episode-img #play {
+    position: absolute;
+    padding-left: 166px;
+    padding-right: 166px;
+    padding-top: 77px;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+.episode-img #play:hover {
+    transform: scale(1.2);
+}
+
+.episode-img #video {
+    width: 100%;
+}
+
+.episode-content {
+    padding-right: 21px;
+    padding-left: 21px;
+    margin: 0 auto;
+    padding-bottom: 24px;
+}
+
+.episode-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+
+.episode-content p {
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+
+.episode-content h5 {
+    display: flex;
+    align-items: center;
+    color: #00FF88;
+    gap: 6px;
 }
 
 /* Responsive design */
@@ -400,6 +459,18 @@ header {
         width: 100%;
         grid-column: span 1;
     }
+
+    .episode-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .episode-img #play {
+        position: absolute;
+        bottom: 100px;
+        left: 30px;
+        cursor: pointer;
+        transition: 1s ease-in-out;
+    }
 }
 
 @media screen and (max-width:576px) {
@@ -438,7 +509,7 @@ header {
 
     #banner {
         background-position: center top;
-        background-size: 100vw 100%;
+        background-size: 120vw 100%;
     }
 
     .banner-container {
@@ -511,6 +582,24 @@ header {
     #box-5 {
         width: 100%;
         grid-column: span 1;
+    }
+
+    .episode-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .episode-img #play {
+        position: absolute;
+        /* top: 83px; */
+        bottom: 83px;
+        right: 5px;
+        left: 5px;
+        cursor: pointer;
+        transition: 1s ease-in-out;
+    }
+
+    .episode-content h2 {
+        font-size: 1.3rem;
     }
 }
 
