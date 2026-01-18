@@ -401,6 +401,53 @@ header {
     cursor: pointer;
 }
 
+/* Footer section*/
+footer {
+    background: url("assets/footer-bg.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.footer-container {
+    max-width: 1360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.footer-container .footer-logo img {
+    width: 410px;
+    height: 60px;
+    margin-bottom: 32px;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 32px;
+}
+
+.footer-icons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-icons a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+
+.copy-right p {
+    color: white;
+}
+
 /* Responsive design */
 @media screen and (max-width:992px) and (min-width:576px) {
 
@@ -410,7 +457,7 @@ header {
     }
 
     #title {
-        font-size: 1rem;
+        font-size: 2.3rem;
     }
 
     #desktop-nav {
@@ -516,6 +563,18 @@ header {
 
     .newsletter-box {
         flex-direction: column;
+    }
+
+    footer {
+        background: url("assets/footer-bg.png") no-repeat;
+        background-size: 100vw 100%;
+        background-position: center;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .footer-social {
+        flex-wrap: wrap;
     }
 }
 
@@ -654,11 +713,30 @@ header {
         justify-content: center;
         text-align: center;
         flex-direction: column;
+        padding: 24px;
     }
 
     .social {
         display: flex;
         align-items: center;
+        justify-content: center;
+    }
+
+    footer {
+        background: url("assets/footer-bg.png") no-repeat;
+        background-size: 100vw 100%;
+        background-position: center;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .footer-logo img {
+        width: 219px;
+        height: 32px;
+    }
+
+    .footer-social {
+        flex-wrap: wrap;
         justify-content: center;
     }
 }
