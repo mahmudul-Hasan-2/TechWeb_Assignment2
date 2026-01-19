@@ -577,6 +577,14 @@ footer {
     .footer-social {
         flex-wrap: wrap;
     }
+
+    .episode-img #play {
+        display: none;
+    }
+
+    .episode-img #video {
+        cursor: pointer;
+    }
 }
 
 @media screen and (max-width:576px) {
@@ -615,7 +623,7 @@ footer {
 
     #banner {
         background-position: center top;
-        background-size: 100vw 100%;
+        background-size: 110vw 100%;
     }
 
     .banner-container {
@@ -696,12 +704,12 @@ footer {
 
     .episode-img #play {
         position: absolute;
-        /* top: 83px; */
         bottom: 83px;
-        right: 5px;
-        left: 5px;
+        right: 170px;
+
         cursor: pointer;
         transition: 1s ease-in-out;
+        display: none;
     }
 
     .episode-content h2 {
@@ -715,6 +723,8 @@ footer {
         text-align: center;
         flex-direction: column;
         padding: 24px;
+        width: 94%;
+        margin: 0 auto;
     }
 
     .social {
@@ -724,21 +734,26 @@ footer {
     }
 
     footer {
-        background: url("assets/footer-bg.png") no-repeat;
-        background-size: 100vw 100%;
+        background: url("assets/footer-bg.png");
         background-position: center;
-        padding-top: 120px;
-        padding-bottom: 120px;
     }
 
-    .footer-logo img {
-        width: 219px;
-        height: 32px;
+    .footer-container .footer-logo img {
+        width: 210px;
+        height: 60px;
+        object-fit: contain;
+        margin-bottom: 32px;
+    }
+
+    .copy-right p {
+        color: white;
+        font-size: 0.8rem;
     }
 
     .footer-social {
-        flex-wrap: wrap;
+        width: 80%;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     #choose,
@@ -757,5 +772,9 @@ footer {
     .banner-container {
         padding-top: 40px;
         padding-bottom: 40px;
+    }
+
+    .episode-img #video {
+        cursor: pointer;
     }
 }
