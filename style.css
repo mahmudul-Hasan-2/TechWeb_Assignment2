@@ -322,21 +322,9 @@ footer {
     margin-bottom: 24px;
 }
 
-.episode-img #play {
-    position: absolute;
-    padding-left: 166px;
-    padding-right: 166px;
-    padding-top: 77px;
-    cursor: pointer;
-    transition: 1s ease-in-out;
-}
-
-.episode-img #play:hover {
-    transform: scale(1.1);
-}
-
 .episode-img #video {
     width: 100%;
+    border-radius: 20px;
 }
 
 .episode-content {
